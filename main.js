@@ -9,15 +9,11 @@ var calculateNumbers = function () {
 	var textBoxOne = document.getElementById("value-one");
 	var textBoxTwo = document.getElementById("value-two");
 
-	Number(textBoxOne.value) + Number(textBoxTwo.value);
-
- 
+	var sum = Number(textBoxOne.value) + Number(textBoxTwo.value);
+    answerBox.innerHTML=sum; 
 };
 
-answerBox = function () {
-  answerBox.innerHTML = "calculateNumbers";
 
-};
 
 button.addEventListener("click", calculateNumbers);
 
